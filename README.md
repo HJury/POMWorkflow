@@ -1,3 +1,3 @@
-# WeCruitIO testing repository
+# POMWorkflow repository
 
-This repository contains the WeCruitIO automation test for the application frontend and backend.
+This project shows the test automation workflow using POM as a framework and adding a new layer taken from screenplay.
