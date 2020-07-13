@@ -7,7 +7,7 @@ import cucumber.api.java.en.When;
 import util.JsonReader;
 
 public class CampaignEditStepsDefinitions {
-    CampaignEditTasks campaignEditTasks = new CampaignEditTasks(Helper.driver);
+    CampaignEditTasks campaignEditTasks = new CampaignEditTasks(Hook.driver);
     private String campaignDB = "Campaign on DB",
             editCampaign = "Info for Edition",
             listPage = "Campaign List",

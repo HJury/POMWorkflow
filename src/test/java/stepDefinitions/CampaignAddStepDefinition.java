@@ -20,8 +20,8 @@ public class CampaignAddStepDefinition {
 
     @Given("^select Create new campaign$")
     public void selectCreateNewCampaign() {
-        campaignAddTasks = new CampaignAddTasks(Helper.driver);
-        Helper.driver.get(JsonReader.getValue(links, "Campaign Add"));
+        campaignAddTasks = new CampaignAddTasks(Hook.driver);
+        Hook.driver.get(JsonReader.getValue(links, "Campaign Add"));
         jsonObjectValidInfo = JsonReader.getInfoPackage(validInfo);
     }
 

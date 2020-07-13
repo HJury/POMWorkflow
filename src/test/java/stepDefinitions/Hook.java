@@ -18,7 +18,7 @@ import util.PropertiesReader;
 import java.io.IOException;
 
 
-public class Helper {
+public class Hook {
     static public WebDriver driver;
     private String
             links = "Links",
@@ -28,7 +28,11 @@ public class Helper {
     static public void setUp() throws IOException {
 
         if (TestRunner.browser.equals("chrome")) {
-            String path = System.getProperty("user.dir") + new PropertiesReader().getPropoValues("chromeDriver");
+            String path = "";
+            if (System.getProperty("os.name").contains("Windows"))
+                path = System.getProperty("user.dir") + new PropertiesReader().getPropoValues("chromeDriverWin");
+            if (System.getProperty("os.name").contains("Linux"))
+                path = System.getProperty("user.dir") + new PropertiesReader().getPropoValues("chromeDriverLin");
             System.setProperty("webdriver.chrome.driver", path);
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200", "--ignore-certificate-errors",
@@ -54,7 +58,7 @@ public class Helper {
 
     @Given("^the user login into WeCruitIO$")
     public void the_user_gets_into_WeCruitIO_Campaign_List_page$() {
-        Helper.driver.get(JsonReader.getValue(links, login));
+        Hook.driver.get(JsonReader.getValue(links, login));
     }
 
     @After

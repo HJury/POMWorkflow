@@ -16,7 +16,7 @@ public class CampaignListStepsDefinitions {
 
     @Given("^gets into Campaign List page$")
     public void the_user_gets_into_WeCruitIO_Campaign_List_page$() {
-        campaignListTasks = new CampaignListTasks(Helper.driver);
+        campaignListTasks = new CampaignListTasks(Hook.driver);
     }
 
     @When("^the user clicks on the 'All' Filter button$")
