@@ -9,7 +9,7 @@ Currently, this project allows its integration to a **CD** or **CI** cycle, reco
 In order to run your test, you will need: 
 
 * Java 1.8
-![Java Logo](https://github.com/HJury/ReadmePictures/blob/master/Cucumber.png) ![TestNG Logo](https://github.com/HJury/ReadmePictures/blob/master/Java.png)
+![Java Logo](https://github.com/HJury/ReadmePictures/blob/master/java.png) 
 
 * Chrome 83.0.4103.xx
 ![Cucumber Logo](https://github.com/HJury/ReadmePictures/blob/master/Chrome.png)
