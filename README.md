@@ -1,4 +1,4 @@
-# POMWorkflow repository
+## POMWorkflow repository
 
 This project shows the test automation workflow using **POM** as a framework and adding a new layer took from **Screenplay**.
 
@@ -16,8 +16,9 @@ In order to run your tests, you will need:
 
 ![Cucumber Logo](https://github.com/HJury/ReadmePictures/blob/master/Chrome.png)
 
-All the new scenario within the features should have the tag **"@EXECUTE"**
+#Running the tests
 
-The command needed to run the test is: 
-      `mvn test`
-
+For the tests to be executed all the new scenario within the features should have the tag **"@EXECUTE"** and you should enter the command: 
+      `mvn test` in order to run the scenarios within the features.
+      
+The former command will run the tests and generates a report using the ExtentReports library, this report will keep the gherkin syntax of the scenarios as well as the respective result of each one. The report will be generated on the directory: `../test-output/HtmlReport/AutomationExtentHtml.html`
