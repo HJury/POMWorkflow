@@ -16,7 +16,7 @@ In order to run your tests, you will need:
 
 ![Cucumber Logo](https://github.com/HJury/ReadmePictures/blob/master/Chrome.png)
 
-#Running the tests
+# Running the tests
 
 For the tests to be executed all the new scenario within the features should have the tag **"@EXECUTE"** and you should enter the command: 
       `mvn test` in order to run the scenarios within the features.
