@@ -20,7 +20,7 @@ In order to run your tests, you will need:
 
 For the tests to be executed all the new scenario within the features should have the tag **"@EXECUTE"** and you should enter the command: 
 
-      `mvn test` 
+`mvn test` 
       
 in order to run the scenarios within the features.
       
